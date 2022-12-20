@@ -76,12 +76,30 @@ WSGI_APPLICATION = 'apipagos.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+
+#sqlite
+""" DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+} """
+
+
+
+#railway
+#mysql://root:PFPzGVGQGtnVM140w8B4@containers-us-west-172.railway.app:6844/railway
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': "railway",
+        'USER': "root",
+        'PASSWORD': "PFPzGVGQGtnVM140w8B4",
+        'HOST': "containers-us-west-172.railway.app" ,
+        'PORT': '6844'
+    }
 }
+
 
 
 # Password validation
