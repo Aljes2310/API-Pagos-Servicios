@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-4^w5%1_tkdlu^h3iam4-a-xs0(&7ts12b8hydx#llt#ga-$r*7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOST = ['*']
 
 
 # Application definition
@@ -171,3 +171,4 @@ REST_FRAMEWORK = {
         'dosmil' : "2000/day"
     }
 }
+
