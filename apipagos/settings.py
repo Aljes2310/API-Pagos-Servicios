@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-4^w5%1_tkdlu^h3iam4-a-xs0(&7ts12b8hydx#llt#ga-$r*7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOST = ['api-pagos-servicios-production.up.railway.app' ]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'users', 'django_filters', 'django_seed', 'drf_yasg',
     'v1.apps.V1Config',  'v2.apps.V2Config' 
 ]
+CSRF_TRUSTED_ORIGINS = ['https://api-pagos-servicios-production.up.railway.app']
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
